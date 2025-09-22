@@ -1,0 +1,1 @@
+console.log("Macsumsuk landing page loaded.");

@@ -6,11 +6,12 @@ console.log("Macsumsuk landing page loaded.");
         if ($heroSlider.length) {
             $heroSlider.slick({
                 dots: true,
-                arrows: true,
+                arrows: false,
                 autoplay: true,
                 autoplaySpeed: 6000,
                 speed: 800,
                 fade: true,
+                dots: false,
                 cssEase: "ease-in-out",
                 pauseOnHover: true,
                 adaptiveHeight: false

@@ -8,6 +8,9 @@ console.log("Macsumsuk landing page loaded.");
           $(this).parent().children(".sub2_depth").addClass('active');
           $(this).parent().siblings().children(".sub2_depth").removeClass('active');
         })
+        $('.sub2_depth').on('mouseleave', function() {
+          $(this).removeClass('active');
+        });
 
         var $heroSlider = $(".hero-slider");
 

@@ -6,33 +6,62 @@
 <title>맥섬석 기능성 사료</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 <link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
-<body id="top">
+<body id="top" class="sian">
+    <!--<div class="sian_wrap" style="overflow: hidden; height:4007px;"><img src="./frame.png"></div>-->
+    <style>
+    .sian{overflow-x:hidden; overflow-y:auto;}
+    .sian .sian_wrap{position:absolute;top:0;left:0;; width:1920px; pointer-events:none;}
+    .sian .sian_wrap img{position:absolute; opacity:0.3; top:33px; left:calc(50% - 8px); z-index:100; width:100%; max-width:inherit; max-height:inherit;pointer-events:none;}
+    .sian .sian_wrap img{transform:translateX(-50%)}
+    </style>
     <header class="main-header">
         <div class="global-bar" aria-label="글로벌 메뉴">
             <span class="global-weight">830g light</span>
-            <div class="global-actions">
-                <a class="global-link" href="#contact">문의하기</a>
-                <button type="button" class="global-lang" aria-label="언어 변경">KO</button>
-                <button type="button" class="global-audio" aria-label="오디오 안내">🔊</button>
-            </div>
+            
         </div>
         <div class="nav-bar">
-            <a class="brand" href="#top" aria-label="맥섬석 GM 메인으로 이동">
+            <!-- <a class="brand" href="#top" aria-label="맥섬석 GM 메인으로 이동">
                 <span class="brand-symbol">B</span>
                 <span class="brand-text">
                     <span class="brand-name">BUNMISO</span>
                     <span class="brand-slogan">부니미소 주식회사</span>
                 </span>
-            </a>
+            </a> -->
+            <h1 class="logo">
+                <a class="brand" href="#top" aria-label="맥섬석 GM 메인으로 이동">
+                    <img fetchpriority="high" src="https://static.wixstatic.com/media/0a288b_c0558587c1d540d39da82172621d27cb~mv2.png/v1/fill/w_300,h_51,al_c,lg_1,q_85,enc_avif,quality_auto/main_01_txt_01.png" alt="main_01_txt_01.png" style="object-fit: cover; object-position: 50% 50%; width: 100%;" data-ssr-src-done="true">
+                </a>
+            </h1>
             <nav class="primary-nav" aria-label="주요 메뉴">
                 <ul>
-                    <li><a href="#about">기업소개</a></li>
-                    <li><a href="#features">기능별</a></li>
-                    <li><a href="#species">축종별</a></li>
-                    <li><a href="#pets">반려동물</a></li>
+                    <li class="primary-nav-item">
+                        <a class="primary-nav-link" href="#about">기업소개</a>
+                        <ul class="sub2_depth">
+                            <li><a href="#none">회사소개</a></li>
+                            <li><a href="#none">회사연혁</a></li>
+                        </ul>
+                    </li>
+                    <li class="primary-nav-item"><a class="primary-nav-link" href="#features">기능별</a></li>
+                    <li class="primary-nav-item"><a class="primary-nav-link" href="#species">축종별</a></li>
+                    <li class="primary-nav-item"><a class="primary-nav-link" href="#pets">반려동물</a></li>
                 </ul>
             </nav>
+            <div class="global-actions">
+                <a class="global-link" href="#contact">문의하기</a>
+                <button type="button" class="global-lang" aria-label="언어 변경">KO</button>
+                <!--<button type="button" class="global-audio" aria-label="오디오 안내">🔊</button>-->
+                <a href="" class="btn_all_menu">
+                    <div>
+                        <span class="barTop"></span>
+                        <span class="barMid"></span>
+                        <span class="barBot"></span>
+                    </div>
+                </a>
+            </div>
         </div>
         <div class="hero">
             <!--<h1>천연 미네랄 [맥섬석] 기반 기능성 사료</h1>
@@ -42,35 +71,77 @@
                 <article class="hero-slide">
                     <img src="./feed/images/grow_img01.png" alt="현미경을 사용하는 연구원의 실험실 장면" />
                     <div class="hero-content">
-                        <h1>천연 미네랄 [맥섬석] 기반 기능성 사료</h1>
-                        <p>Growfeed, High-Vita 등 다양한 제품으로 건강한 축산 환경 조성</p>
+                        <h2 class="hero_title">천연 미네랄 [맥섬석] <br>기반 기능성 사료</h2>
+                        <p class="hero_desc">Growfeed, High-Vita 등 다양한 제품으로 건강한 축산 환경 조성</p>
                         <a href="#contact" class="cta">상담 문의</a>
                     </div>
                 </article>
                 <article class="hero-slide">
                     <img src="./feed/images/grow_img02.png" alt="가축 사료를 점검하는 수의사" />
                     <div class="hero-content">
-                        <h2>축종별 맞춤 솔루션</h2>
-                        <p>양돈, 양계, 양어 등 다양한 축산 환경에서 검증된 맞춤형 사료첨가제를 제공합니다.</p>
+                        <h2 class="hero_title">축종별 맞춤 <br>솔루션</h2>
+                        <p class="hero_desc">양돈, 양계, 양어 등 다양한 축산 환경에서 검증된 맞춤형 사료첨가제를 제공합니다.</p>
                         <a href="#species" class="cta" aria-label="축종별 맞춤 제품 섹션으로 이동">제품 살펴보기</a>
                     </div>
                 </article>
                 <article class="hero-slide">
                     <img src="./feed/images/grow_img01.png" alt="반려견과 함께하는 가족" />
                     <div class="hero-content">
-                        <h2>반려동물을 위한 프리미엄 케어</h2>
-                        <p>그로피드 펫과 프리바이오틱 솔루션으로 반려동물의 피부와 장 건강을 지켜보세요.</p>
+                        <h2 class="hero_title">반려동물을 위한 <br>프리미엄 케어</h2>
+                        <p class="hero_desc">그로피드 펫과 프리바이오틱 솔루션으로 반려동물의 피부와 장 건강을 지켜보세요.</p>
                         <a href="#pets" class="cta" aria-label="반려동물 케어 섹션으로 이동">반려 케어 보기</a>
                     </div>
                 </article>
-            </div>
+            </div> <!-- //hero-slider -->
         </div>
     </header>
+    <div id="info" data-template="section">
+        <div class="wrap">
+            <div class="left_col col">
+                <h2 class="info_title title">회사 소개</h2>
+                <h3 class="info_letter slogan">About</h3>
+                <p class="info_desc desc">
+                    맥섬석 GM(주)는 천연 미네랄인 맥섬석 기반 사료첨가제를 제조하는 <br>기업으로, 국내외 다양한 축산/양어 분야에 제품을 공급하고 있습니다.
+                </p>
+                <div class="info_view">
+                    <a href="#none" class="more">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                            <path class="st0" d="M58.8,6.1L18.5,46.4l40.3,40.3L99,46.4L58.8,6.1z M20.5,46.4L58.8,8.1L97,46.4L58.8,84.6L20.5,46.4z"></path>
+                            <polygon class="st0" points="59,39.7 58.2,40.6 63.2,45.6 1.8,45.6 1.8,47.1 63.2,47.1 58.2,52.1 59,53 65.7,46.4 "></polygon>
+                        </svg>
+                        VIEW MORE
+                    </a>
+                </div>
+            </div> <!-- //left_col -->
+            <div class="right_col col">
+                <div class="video">
+                    <span class="video_frame">
+                        <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/rraHcEgyiTw?autoplay=0&amp;controls=0&amp;loop=1&amp;playlist=rraHcEgyiTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> -->
+                        <!-- <video preload="none" autoplay="" loop="" playsinline="true" src="https://video.wixstatic.com/video/0a288b_b107d56471fa46cda6d5c1d1f15c26e3/1080p/mp4/file.mp4"></video> -->
+                        <video autoplay muted loop playsinline preload="auto" src="https://video.wixstatic.com/video/0a288b_b107d56471fa46cda6d5c1d1f15c26e3/1080p/mp4/file.mp4"></video>
 
-    <section id="about">
-        <h2>회사 소개</h2>
-        <p>맥섬석 GM(주)는 천연 미네랄인 맥섬석 기반 사료첨가제를 제조하는 기업으로, 국내외 다양한 축산/양어 분야에 제품을 공급하고 있습니다.</p>
-    </section>
+                    </span>
+                </div>
+            </div> <!-- //right_col -->
+        </div>
+    </div> <!-- //info -->
+
+    <!--<div id="about" data-template="section">
+        <div class="wrap">
+            <h2 class="title">회사 소개</h2>
+            <h3 class="slogan">Introduce</h3>
+            <p class="desc">맥섬석 GM(주)는 천연 미네랄인 맥섬석 기반 사료첨가제를 제조하는 기업으로, 국내외 다양한 축산/양어 분야에 제품을 공급하고 있습니다.</p>
+            <div class="info_view">
+                <a href="#none" class="more">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                        <path class="st0" d="M58.8,6.1L18.5,46.4l40.3,40.3L99,46.4L58.8,6.1z M20.5,46.4L58.8,8.1L97,46.4L58.8,84.6L20.5,46.4z"></path>
+                        <polygon class="st0" points="59,39.7 58.2,40.6 63.2,45.6 1.8,45.6 1.8,47.1 63.2,47.1 58.2,52.1 59,53 65.7,46.4 "></polygon>
+                    </svg>
+                    VIEW MORE
+                </a>
+            </div>
+        </div>
+    </div>-->
 
     <section id="features">
         <h2>기능별 솔루션</h2>

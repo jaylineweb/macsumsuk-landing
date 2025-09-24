@@ -31,6 +31,7 @@ console.log("Macsumsuk landing page loaded.");
         $('.btn_all_menu').on('click',function(e){
             e.preventDefault();
             if($(this).hasClass('on')){
+                $(this).removeClass('fixed');
                 $(this).removeClass('on');
                 $('.amDim').fadeOut(200);
                 $('#newHeader').removeClass('black');
@@ -38,6 +39,7 @@ console.log("Macsumsuk landing page loaded.");
 
 
             }else{
+                $(this).addClass('fixed');
                 $(this).addClass('on');
                 $('.amDim').fadeIn(200);
                 $('#newHeader').addClass('black');

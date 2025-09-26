@@ -47,5 +47,29 @@ console.log("Macsumsuk landing page loaded.");
 
             }
         });
+        $('.feature_main_slider').slick({
+            slidesToShow:1,
+            slidesToScroll:1,
+            arrows:false,
+            fade:true,
+            asNavFor:'.features_list'
+        });
+
+        $('.features_list').slick({
+            asNavFor:'.feature_main_slider',
+            autoplay:false,
+            speed:1000,
+            dots:false,
+            swipe:true,
+            swipeToSlide:true,
+            draggable:true,
+            slidesToShow:3,
+            slidesToScroll:1,
+            infinite:true,
+            variableWidth:true,
+            focusOnSelect:true,
+            prevArrow:$('.feature_control_box .prev'),
+            nextArrow:$('.feature_control_box .next')
+        });
     });
 })(jQuery);
